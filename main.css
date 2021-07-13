@@ -1,0 +1,179 @@
+*{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  box-sizing: border-box  ;
+}
+html{
+  color: gray;
+  height: 100vh;
+  width: 100%;
+}
+
+.row{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+a{
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: blue;
+  text-decoration: none;
+}
+a:hover{
+  color: rgb(2, 147, 243);
+}
+
+/*BODY*/
+
+#master{
+  max-width: 980px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+#header-numb{
+  background-color: blue;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 2rem;
+  font-size: 1rem;
+  color: white;
+}
+.sp{
+  margin-left: 0.6rem;
+}
+#logo{
+  width: 230px;
+  height: 100px;
+}
+nav{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+ nav ul{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 1.2rem;
+  
+}
+nav ul li{
+  margin-right: 1rem;
+  margin-top: 5px;
+}
+
+
+
+#slider > img{
+  width: 894px;
+  height: 290px;
+}
+section{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+section > img{
+  width: 325px;
+  height: 212px;
+}
+div > ol > li{
+  list-style:disc;
+}
+div > ol{
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+h1{
+  margin-bottom: 1rem;
+}
+.card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+}
+.card-img{
+  width: 196px;
+  height: 163px;
+}
+
+footer{
+  height: 8rem;
+  background-color: rgba(34, 34, 34, 0.747);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+footer  > nav {
+  color: rgb(141, 141, 141);
+  margin-top: -1rem;
+}
+
+/*MOBILE*/
+@media(max-width: 980px){
+  .row{
+    flex-direction: column;
+  }
+  section{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+  }
+  section > img {
+    margin: 10px;
+  }
+  h2{
+    text-align: center;
+    background-color: blue;
+    color: white;
+  }
+  nav{
+    flex-direction: column;
+  }
+}
+
+#ancoramenu:hover ul{
+  visibility: visible;
+  display: flex;
+  flex-direction: column;
+}
+#submenu{
+  display: block;
+  position: absolute;
+  z-index: 200;
+  background-color: blue;
+  color: white;
+  cursor: pointer;
+  visibility: hidden;
+}
+#submenusec{
+  display: block;
+  position: absolute;
+  z-index: 200;
+  margin-top: -9px;
+  margin-left: 7rem;
+  background-color: blue;
+  color: white;
+  cursor: pointer;
+  visibility: hidden;
+}
+#submenu li , #submenusec li {
+  padding: 1rem;
+
+}
